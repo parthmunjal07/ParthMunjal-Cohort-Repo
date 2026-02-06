@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+body{
+    background-color: #FFFFFF;
+    background-repeat: no-repeat;
+    font-family: Inter;
+    background-image: url("https://www.mintlify.com/hero/bg-light.svg");
+    margin: 0 ;
+}
+#navbar{
+    display: flex;
+    justify-content: space-evenly;
+    position: sticky;
+    top: 0;
+}
+.nav-list{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.hero{
+    background-position: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+.contact{
+    border: none;
+    background-color: white;
+    color: black;
+    opacity: 0.5;
+    border-radius: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-size: 15px;
+    border: none;
+    margin-top: 10px;
+}
+.contact:hover {
+    cursor: pointer;
+}
+.start{
+    border: none;
+    background: #fff; 
+    border-radius: 20px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-size: 15px;
+}
+.start:hover {
+    background-color: #dddddd;
+    cursor: pointer;
+}
+.banner {
+    margin-top: 100px;
+    width: fit-content;
+    padding: 10px 12px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #044869;
+    border-radius: 20px;
+    font-size: 13px;
+}
+.banner:hover {
+    cursor: pointer;
+}
+.title {
+    color: #fff;
+    font-size: 54px;
+    font-weight: 600;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.line1 {
+    margin-top: 50px;
+}
+.email{
+    display: flex;
+}
+.email-input{
+    background-color: #62A9A6; 
+    
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+    background-color: white;
+    color: black;
+    opacity: 0.5;
+}
+.email-button{
+    border: none;
+    background: white;
+    color: #000;
+    padding: 12px 22px;
+    font-size: 15px;
+    border-radius: 999px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.comp-img {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}   
+.part2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.heading2{
+    text-align: center;
+    margin-bottom: 0;
+}
+.subheading2 {
+    text-align: center;
+    width: 600px;
+    color: #393A41;
+}
