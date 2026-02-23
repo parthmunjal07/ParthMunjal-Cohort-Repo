@@ -19,8 +19,9 @@ console.log(cookDish.apply(guptaKitchen, guptaOrder));
 
 const bills = [100, 30, 45, 50];
 
-Math.max.apply(null, bills);
-Math.max(...bills);
+console.log(Math.max.apply(null, bills));
+console.log(Math.max(...bills));
+console.log(Math.max(bills));
 
 function reportDelivery(location, status) {
   return `${this.name} at ${location}: ${status}`;
@@ -33,4 +34,6 @@ console.log("Apply: ", reportDelivery.apply(deliveryBoy, ["Mars", "Pick up"]));
 console.log("Bind: ", reportDelivery.bind(deliveryBoy, "Haridwar", "WHAT"));
 
 const bindReport = reportDelivery.bind(deliveryBoy);
+const bindReport2 = reportDelivery.bind(deliveryBoy, "Haridwar", "WHAT");
 console.log(bindReport("Haridwar", "WHAT"));
+console.log(bindReport2);
