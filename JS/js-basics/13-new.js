@@ -1,8 +1,10 @@
 function TataCar(chassisNumber, modelName) {
   
   this.chassisNumber = chassisNumber;
+  
   this.modelName = modelName;
   this.fuelLevel = 100;
+  
 }
 
 TataCar.prototype.status = function () {
