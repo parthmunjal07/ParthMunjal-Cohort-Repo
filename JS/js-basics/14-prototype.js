@@ -15,6 +15,7 @@ raj.runBusiness = function () {
 console.log(raj);
 
 const ranbir = Object.create(raj);
+console.log(ranbir);
 ranbir.name = "ranbir";
 ranbir.generation = "son";
 ranbir.makeFilm = function () {
