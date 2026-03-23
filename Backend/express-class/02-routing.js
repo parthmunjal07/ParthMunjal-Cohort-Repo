@@ -54,6 +54,8 @@ function block_1_httpMethods(){
             const id = req.params.id
             if(!routes[id]) return res.status(404).json({error: "Something went wrong nhi bhejna h"});
             //TODO complete this route
+            routes[id] = { ...routes[id], ...req.body };
+            res.json(routes[id]);
 
         })
         app.delete("/routes/:id", (req, res) => {
@@ -79,11 +81,11 @@ function block_1_httpMethods(){
                     method: "POST",
                     headers: {
                         'Content-Type': "application/json",
-                        body: JSON.stringify({
+                    },
+                    body: JSON.stringify({
                             name: "Colaba-Worli",
                             direction: "South"
                         })
-                    }
                 })
                 const created = await createRes.json()
 
