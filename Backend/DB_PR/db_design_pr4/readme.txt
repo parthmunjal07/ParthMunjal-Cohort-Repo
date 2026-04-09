@@ -40,6 +40,7 @@ parking_spot [icon: road, color: Red] {
   id serial fk
   is_occupied boolean
   parking_zone_id int fk
+  is_ev_charger_av boolean
   created_at timestamp
   updated_at timestamp
 } 
